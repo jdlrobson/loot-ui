@@ -1,0 +1,34 @@
+/* Mobile first queries */
+
+.larger-than-mobile(@rules) {
+  @media (min-width: 400px) { @rules(); }
+}
+
+.larger-than-phablet(@rules) {
+  @media (min-width: 550px) { @rules(); }
+}
+
+.larger-than-tablet(@rules) {
+  @media (min-width: 750px) { @rules(); }
+}
+
+.larger-than-desktop(@rules) {
+  @media (min-width: 1000px) { @rules(); }
+}
+
+.larger-than-desktop-hd(@rules) {
+  @media (min-width: 1200px) { @rules(); }
+}
+
+.content-container() {
+  padding: 0 16px;
+
+  .larger-than-tablet({
+    padding: 0 48px;
+    max-width: 1000px;
+  });
+
+  .larger-than-desktop({
+    margin: 0 auto;
+  });
+}

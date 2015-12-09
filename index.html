@@ -1,0 +1,298 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Introduction | loot-ui</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="An experimental server that renders a web UI for Wikipedia content.">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./docs/styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./docs/features.html" />
+    
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="0" data-chapter-title="Introduction" data-filepath="README.md" data-basepath="." data-revision="Wed Dec 09 2015 15:02:54 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter active" data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="docs/features.html">
+            
+                
+                    <a href="./docs/features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="docs/architecture.html">
+            
+                
+                    <a href="./docs/architecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="docs/developers.html">
+            
+                
+                    <a href="./docs/developers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Developer information
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="docs/running-the-project.html">
+            
+                
+                    <a href="./docs/running-the-project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Running the project
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="docs/structure-of-the-code.html">
+            
+                
+                    <a href="./docs/structure-of-the-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Structure of the code
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="docs/technologies-used.html">
+            
+                
+                    <a href="./docs/technologies-used.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Technologies used
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >loot-ui</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="lootui"><a name="lootui" class="plugin-anchor" href="#lootui"><span class="fa fa-link"></span></a>loot-ui</h1>
+<p>An experimental server that renders a web UI for Wikipedia content.</p>
+<p>This is a research project of the <a href="https://www.mediawiki.org/wiki/Reading/Web/Team" target="_blank">Reading Web Team</a>
+from the Wikimedia Foundation.</p>
+<p>The main objective is to get Wikipedia content to load really fast on 2G
+connections. More concretely, to
+<a href="https://www.mediawiki.org/wiki/Reading/Web/Projects/Barack_Obama_in_under_15_seconds_on_2G" target="_blank">load Barack Obama&apos;s article: in under 15 seconds on 2G</a>.</p>
+<p>For that, the approach of the research is to create a web application that will
+leverage client side caching and that will be server rendered on first load
+with a minimal lean HTML.</p>
+<h2 id="features"><a name="features" class="plugin-anchor" href="#features"><span class="fa fa-link"></span></a>Features</h2>
+<ul>
+<li>Lean and fast HTML only mode (server side rendering of client side web app).</li>
+<li>Client side webapp that picks up from server side render.<ul>
+<li>Leverage modern client side technologies (indexeddb, service worker).</li>
+</ul>
+</li>
+<li>Offline use and reading of content.</li>
+</ul>
+<h2 id="links"><a name="links" class="plugin-anchor" href="#links"><span class="fa fa-link"></span></a>Links</h2>
+<ul>
+<li><a href="http://joakin.github.io/loot-ui" target="_blank">Documentation</a></li>
+<li><a href="https://reading-web-research.wmflabs.org/wiki/Moon" target="_blank">Deployed version</a></li>
+</ul>
+<h2 id="external-documentation"><a name="external-documentation" class="plugin-anchor" href="#external-documentation"><span class="fa fa-link"></span></a>External documentation</h2>
+<ul>
+<li><a href="https://www.mediawiki.org/wiki/Reading/Web/Projects/A_frontend_powered_by_Parsoid" target="_blank">A frontend powered by parsoid</a></li>
+<li><a href="https://www.mediawiki.org/wiki/Reading/Web/Projects/A_frontend_powered_by_Parsoid/Notes" target="_blank">Weekly development notes</a></li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <a href="./docs/features.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Features"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/joakin/loot-ui/tree/master","label":"Edit This Page"},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"},"github":{"url":"https://github.com/joakin/loot-ui"},"anchors":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

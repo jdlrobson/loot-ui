@@ -1,0 +1,139 @@
+@import '../styles/mixins.less';
+
+.Section {
+  .Section-title {
+    border-bottom: 1px solid lightgray;
+  }
+
+  .Section-body {
+    img { max-width: 100%; height: auto; }
+
+    a {
+      text-decoration: none;
+      color: #0645ad;
+      background: none;
+      &:visited {
+        color: #0b0080;
+      }
+    }
+
+    .infobox {
+      background-color: #f9f9f9;;
+      // Override infobox styles that break mobile
+      width: auto !important;
+      max-width: 22em !important;
+      float: none !important;
+      .larger-than-desktop({
+        // Needs !important to override the above float: none !important on
+        // wider layouts
+        float: right !important;
+        clear: right;
+        margin: 0 0 1em 1em;
+      });
+      border: 1px solid lightgray;
+
+      caption {
+        font-size: 125%;
+        font-weight: bold;
+        padding: 0.2em;
+      }
+      td, th {
+        vertical-align: top;
+        text-align: left;
+        border-top: 1px solid lightgray;
+      }
+      table tr:first-child {
+        >th, >td { border-top-width: 0; }
+      }
+    }
+
+    .hatnote {
+      font-size: 0.8em;
+      font-style: italic;
+      color: #777777;
+    }
+
+    &>table {
+      max-width: 100%;
+      overflow-x: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &>table tr>td>span {
+      white-space: normal !important;
+    }
+
+    #coordinates { display: none; }
+
+    table th { background-color: #f8f8f8; }
+    table th, td {
+      padding: 0.2em 0.5em;
+      font-size: 80%;
+    }
+
+    figure[typeof*='mw:Image'] {
+      display: table;
+      border-collapse: collapse;
+      margin-left: 0; margin-right: 0;
+      width: 100%;
+      text-align: center;
+      overflow: auto;
+      background-color: #f9f9f9;
+      border: 1px solid lightgray;
+      border-bottom: 0;
+
+      & figcaption {
+        display: table-caption;
+        caption-side: bottom;
+        font-size: 0.8em;
+        text-align: left;
+        background-color: #f9f9f9;
+        border: 1px solid lightgray;
+        border-top: 0;
+      }
+
+      >* {
+        padding: 6px;
+      }
+
+      .larger-than-tablet({
+        width: auto;
+        clear: right; float: right;
+        margin: 1em 0 1em 1em;
+      });
+
+      &.mw-halign-right {
+        width: auto;
+        clear: right; float: right;
+        margin: 1em 0 1em 1em;
+      }
+      &.mw-halign-left {
+        width: auto;
+        clear: left; float: left;
+        margin: 1em 1em 1em 0;
+      }
+    }
+
+    .hlist {
+      dl, ol, ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: disc;
+      }
+      dd, li {
+        &:last-child:after {
+          content: "";
+        }
+        &:after {
+          content: " · ";
+          font-weight: bold;
+        }
+      }
+      dd, dt, li {
+        margin: 0;
+        display: inline;
+      }
+    }
+  }
+}

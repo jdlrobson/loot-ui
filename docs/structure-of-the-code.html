@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Structure of the code | loot-ui</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-image-captions/image-captions.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../docs/styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../docs/technologies-used.html" />
+    
+    
+    <link rel="prev" href="../docs/running-the-project.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="3.2" data-chapter-title="Structure of the code" data-filepath="docs/structure-of-the-code.md" data-basepath=".." data-revision="Wed Dec 09 2015 15:02:54 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="docs/features.html">
+            
+                
+                    <a href="../docs/features.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Features
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="docs/architecture.html">
+            
+                
+                    <a href="../docs/architecture.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Architecture
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="docs/developers.html">
+            
+                
+                    <a href="../docs/developers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Developer information
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="docs/running-the-project.html">
+            
+                
+                    <a href="../docs/running-the-project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Running the project
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="docs/structure-of-the-code.html">
+            
+                
+                    <a href="../docs/structure-of-the-code.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Structure of the code
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="docs/technologies-used.html">
+            
+                
+                    <a href="../docs/technologies-used.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Technologies used
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >loot-ui</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="structure-of-the-code"><a name="structure-of-the-code" class="plugin-anchor" href="#structure-of-the-code"><span class="fa fa-link"></span></a>Structure of the code</h1>
+<p>High level overview of what&apos;s in the code base. Nice to have a look at for
+knowing where things are and getting started.</p>
+<h2 id="documentation"><a name="documentation" class="plugin-anchor" href="#documentation"><span class="fa fa-link"></span></a>Documentation</h2>
+<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/README.md" target="_blank"><code>README.md</code></a> &#x2192; Project documentation main page</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/docs" target="_blank"><code>docs</code></a> &#x2192; Project docs</li>
+</ul>
+<h2 id="project-configuration"><a name="project-configuration" class="plugin-anchor" href="#project-configuration"><span class="fa fa-link"></span></a>Project configuration</h2>
+<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/package.json" target="_blank"><code>package.json</code></a> &#x2192; npm project configuration</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/book.json" target="_blank"><code>book.json</code></a> &#x2192; Documentation generator config</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server/webpack" target="_blank"><code>webpack</code></a> &#x2192; Webpack configuration files</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server/public" target="_blank"><code>public</code></a> &#x2192; Compiled assets folder</li>
+</ul>
+<h2 id="source-code"><a name="source-code" class="plugin-anchor" href="#source-code"><span class="fa fa-link"></span></a>Source code</h2>
+<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/index.js" target="_blank"><code>index.js</code></a> &#x2192; Server entry point</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib" target="_blank"><code>lib</code></a> &#x2192; Source folder<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client" target="_blank"><code>client</code></a> &#x2192; Client side web application (browser code)<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/index.js" target="_blank"><code>index.js</code></a> &#x2192; Client side entry point</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/routes.js" target="_blank"><code>routes.js</code></a> &#x2192; Client side routes</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/actions.js" target="_blank"><code>actions.js</code></a> &#x2192; <a href="http://redux.js.org/docs/basics/Actions.html" target="_blank">Action creators</a></li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/reducers.js" target="_blank"><code>reducers.js</code></a> &#x2192; <a href="http://redux.js.org/docs/basics/Reducers.html" target="_blank">Reducers</a></li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/components" target="_blank"><code>components</code></a> &#x2192; <a href="https://facebook.github.io/react/docs/tutorial.html#your-first-component" target="_blank">UI components</a></li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/containers" target="_blank"><code>containers</code></a> &#x2192; <a href="http://redux.js.org/docs/basics/UsageWithReact.html#container-and-presentational-components" target="_blank">Container UI components</a></li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/api.js" target="_blank"><code>api.js</code></a> &#x2192; Api methods</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/client/db" target="_blank"><code>db</code></a> &#x2192; Database storage methods</li>
+</ul>
+</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server" target="_blank"><code>server</code></a> &#x2192; Server side application<ul>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server/index.js" target="_blank"><code>index.js</code></a> &#x2192; Server initialization</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server/routes.js" target="_blank"><code>routes.js</code></a> &#x2192; Server routes</li>
+<li><a href="https://github.com/joakin/loot-ui/tree/master/lib/server/views" target="_blank"><code>views</code></a> &#x2192; HTML generation templates (for index.html)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../docs/running-the-project.html" class="navigation navigation-prev " aria-label="Previous page: Running the project"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../docs/technologies-used.html" class="navigation navigation-next " aria-label="Next page: Technologies used"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/joakin/loot-ui/tree/master","label":"Edit This Page"},"image-captions":{"caption":"_CAPTION_","variable_name":"_pictures"},"github":{"url":"https://github.com/joakin/loot-ui"},"anchors":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
